@@ -8,10 +8,10 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 # Dependencies used :
 
 ## Node:
--chalk 
--inquirer
--figlet 
--child_process
+- chalk 
+- inquirer
+- figlet 
+- child_process
 
 ## Python:
 
