@@ -7,12 +7,12 @@ module.exports = {
       {
         name: 'username',
         type: 'input',
-        message: 'Enter your sniffer type',
+        message: 'Enter your sniffing method :',
         validate: function( value ) {
           if (value.length) {
             return true;
           } else {
-            return 'Please enter a valid sniffer type';
+            return 'Please enter a valid sniffing method';
           }
         }
       },

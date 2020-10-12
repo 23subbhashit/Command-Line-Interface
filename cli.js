@@ -22,9 +22,20 @@ console.log(
 const run = async () => {
     const credentials = await inquirer.askSniffCredentials();
     console.log(credentials);
+    var spawn = require('child_process').spawn;
+    const py = spawn('python', ['./Python/TCP.py',credentials['data']]);
+    py.stdout.on('data' , data =>{
+      console.log(data.toString());
+    });
   };
+
+  
+
+
   
 run();
+
+
 
 // if (files.directoryExists('.git')) {
 //     console.log(chalk.red('Already a Git repository!'));
