@@ -14,8 +14,8 @@ const inquirer  = require('./libs/inquirer');
 clear();
 
 console.log(
-  chalk.yellow(
-    figlet.textSync('Sniffer Application', { horizontalLayout: 'full' })
+  chalk.blue.bold(
+    figlet.textSync('Packet Sniffer', { horizontalLayout: 'full' })
   )
 );
 
