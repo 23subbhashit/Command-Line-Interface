@@ -52,8 +52,3 @@ const run = async () => {
 run();
 
 
-
-// if (files.directoryExists('.git')) {
-//     console.log(chalk.red('Already a Git repository!'));
-//     process.exit();
-//   }
