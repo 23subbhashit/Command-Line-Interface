@@ -22,11 +22,27 @@ console.log(
 const run = async () => {
     const credentials = await inquirer.askSniffCredentials();
     console.log(credentials);
+    if(credentials['username']=='TCP'){
     var spawn = require('child_process').spawn;
     const py = spawn('python', ['./Python/TCP.py',credentials['data']]);
     py.stdout.on('data' , data =>{
       console.log(data.toString());
     });
+  }
+  else if(credentials['username']=='UDP'){
+    var spawn = require('child_process').spawn;
+    const py = spawn('python', ['./Python/UDP.py',credentials['data']]);
+    py.stdout.on('data' , data =>{
+      console.log(data.toString());
+    });
+  }
+  else if(credentials['username']=='ICMP'){
+    var spawn = require('child_process').spawn;
+    const py = spawn('python', ['./Python/ICMP.py',credentials['data']]);
+    py.stdout.on('data' , data =>{
+      console.log(data.toString());
+    });
+  }
   };
 
   
@@ -41,4 +57,3 @@ run();
 //     console.log(chalk.red('Already a Git repository!'));
 //     process.exit();
 //   }
-
