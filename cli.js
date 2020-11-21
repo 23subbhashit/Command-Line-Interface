@@ -47,7 +47,7 @@ const run = async () => {
   }
   else if(credentials['username']=='Final'){
     var spawn = require('child_process').spawn;
-    const py = spawn('python3', ['./Python/Final.py',credentials['data']]);
+    const py = spawn('python3', ['./Python/Final1.py']);
     py.stdout.on('data' , data =>{
       console.log(data.toString());
     });
