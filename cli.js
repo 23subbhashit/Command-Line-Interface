@@ -22,7 +22,7 @@ console.log(
 
 const run = async () => {
     const credentials = await inquirer.askSniffCredentials();
-    console.log(credentials);
+    //console.log(credentials);
     if(credentials['method']=='TCP'){
     var spawn = require('child_process').spawn;
     const py = spawn('python3', ['./Python/TCP.py',credentials['data']]);

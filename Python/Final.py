@@ -48,13 +48,13 @@ def main():
 		
 		#Getting the Ethernet Header
 		eth = eth_head(raw_data)
-		print(chalk.green('Frame :-'))
-		print(chalk.red('Destination: {}, Source: {}, Protocol: {}'.format(eth[0], eth[1], eth[2])))
+		print(chalk.greenBright('Frame :-'))
+		print(chalk.redBright('Destination: {}, Source: {}, Protocol: {}'.format(eth[0], eth[1], eth[2])))
 		
 		#Checks for IPV4 packets
 		if eth[2] == 8:
 			ipv4 = ipv4_header(eth[3])
-			print('\t - ' + 'IPV4 Packet: ')
+			print(chalk.yellowBright('\t - ' + 'IPV4 Packet: '))
 			print('\t\t - ' + 'Version: {}, Header Length: {}, TTL: {}'.format(ipv4[0], ipv4[1], ipv4[2]))
 			print('\t\t - ' + 'Protocol: {}, Source: {}, Target: {}'.format(ipv4[3], ipv4[4], ipv4[5]))
 			
@@ -63,7 +63,7 @@ def main():
 			if ipv4[3] == 6:
 				#Printing TCP Header data
 				tcp = tcp_head(ipv4[6])
-				print(TAB_1 + 'TCP Segment:')
+				print(chalk.yellowBright(TAB_1 + 'TCP Segment:'))
 				print(TAB_2 + 'Source Port: {}, Destination Port: {}'.format(tcp[0], tcp[1]))
 				print(TAB_2 + 'Sequence: {}, Acknowledgment: {}'.format(tcp[2], tcp[3]))
 				print(TAB_2 + 'Flags:')
