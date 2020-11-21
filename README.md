@@ -13,7 +13,7 @@ A command line interface for packet sniffing purpose.
 
 A packet analyzer or packet sniffer is a computer program, or computer hardware such as a packet capture appliance, which can intercept and log traffic that passes over a computer network or part of a network. Sniffers work by examining streams of data packets that flow between clients or server on a network. These packets are intended for — and addressed to — specific machines but using a packet sniffer in random mode allows IT professionals, end users or malicious intruders to examine any packet, regardless of destination.
 
-# Dependencies used:
+# Built with:
 
 ## Node:
 - chalk 
@@ -27,23 +27,29 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 - networking
 - textwrap
 
-# Essential Things:
+# Prerequisite:
+
+## Preferred Platform:
 - Linux for Socket Programming
-- Need to install JavaScript dependencies using:
+
+## Dependencies
+### JavaScript
+#### Install using:
 ```
 npm i
 ```
-- Need to install networking module for python using:
+### Networking module for python:
+#### Install using:
 ```
 pip install networking
 ```
 # Running the Application:
 
-- Make sure to run this program as root using:
+- Run this program as root using:
 ```
 sudo -i
 ```
-- Use this to Run the application:
+- To run the application:
 ```
 node cli.js
 ```
