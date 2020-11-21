@@ -21,6 +21,7 @@
     "@octokit/auth-basic": "^1.4.6",
     "@octokit/rest": "^18.0.6",
     "chalk": "^4.1.0",
+    "chalk-animation": "^1.6.0",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "configstore": "^5.0.1",
