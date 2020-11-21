@@ -29,20 +29,26 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 
 # Prerequisite:
 
-## Preferred Platform:
-- Linux for Socket Programming
+## Preferred Platform -  Linux
 
 ## Dependencies
+
+
 ### JavaScript
 #### Install using:
 ```
 npm i
 ```
+
+
 ### Networking module for python:
 #### Install using:
 ```
 pip install networking
 ```
+
+
+
 # Running the Application:
 
 - Run this program as root using:
@@ -53,6 +59,9 @@ sudo -i
 ```
 node cli.js
 ```
+
+## License
+Distributed under the MIT License. See LICENSE for more information.
 
 
 
