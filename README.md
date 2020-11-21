@@ -13,8 +13,7 @@ A command line interface for packet sniffing purpose.
 
 A packet analyzer or packet sniffer is a computer program, or computer hardware such as a packet capture appliance, which can intercept and log traffic that passes over a computer network or part of a network. Sniffers work by examining streams of data packets that flow between clients or server on a network. These packets are intended for — and addressed to — specific machines but using a packet sniffer in random mode allows IT professionals, end users or malicious intruders to examine any packet, regardless of destination.
 
-# Built with:
-
+## Dependencies
 | NODE  | Python |
 | ------------- | ------------- |
 | Chalk  | struct  |
