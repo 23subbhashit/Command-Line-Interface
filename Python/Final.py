@@ -1,6 +1,7 @@
 import sys
 from struct import *
 import socket, networking, textwrap
+from simple_chalk import chalk,green
 
 #For Data representation
 TAB_1 = '\t - '
@@ -47,8 +48,8 @@ def main():
 		
 		#Getting the Ethernet Header
 		eth = eth_head(raw_data)
-		print('Frame :-')
-		print('Destination: {}, Source: {}, Protocol: {}'.format(eth[0], eth[1], eth[2]))
+		print(chalk.green('Frame :-'))
+		print(chalk.red('Destination: {}, Source: {}, Protocol: {}'.format(eth[0], eth[1], eth[2])))
 		
 		#Checks for IPV4 packets
 		if eth[2] == 8:
