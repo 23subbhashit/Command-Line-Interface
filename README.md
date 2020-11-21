@@ -17,7 +17,31 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 - child_process
 
 ## Python:
-**To be added , Currently under work**
+- struct
+- socket
+- networking
+- textwrap
+
+# Essential Things :
+- Linux for Socket Programmming
+- Need to install javascript dependencies using :
+```
+npm i
+```
+- Need to install networking module for python using :
+```
+pip install networking
+```
+# Running the Application:
+
+- Make sure to run this proagramm as root using :
+```
+sudo -i
+```
+- Use this to Run the application:
+```
+node cli.js
+```
 
 
 
