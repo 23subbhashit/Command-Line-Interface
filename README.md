@@ -15,17 +15,12 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 
 # Built with:
 
-## Node:
-- chalk 
-- inquirer
-- figlet 
-- child_process
-
-## Python:
-- struct
-- socket
-- networking
-- textwrap
+| NODE  | Python |
+| ------------- | ------------- |
+| Chalk  | struct  |
+| inquirer  | socket  |
+| figlet  | networking  |
+| child_process | textwrap  |
 
 # Prerequisite:
 
