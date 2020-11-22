@@ -4,7 +4,7 @@
   "description": "A command line interface  for sniffing purposes.",
   "main": "cli.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive --exit"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,9 @@
     "minimist": "^1.2.5",
     "simple-git": "^2.21.0",
     "touch": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
   }
 }

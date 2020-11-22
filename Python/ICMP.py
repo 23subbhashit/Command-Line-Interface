@@ -2,6 +2,7 @@ import sys
 from struct import *
 import socket, networking, textwrap
 
+
 def main():
 	#Creating raw socket to accept data packets from all ports
 	s = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(3))
