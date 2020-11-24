@@ -21,6 +21,13 @@ A packet analyzer or packet sniffer is a computer program, or computer hardware 
 | figlet  | networking  |
 | child_process | textwrap  |
 
+## Test Dependencies
+| Command Line Interface  |
+| ------------- | 
+| Mocha  | 
+| Chai  |
+
+
 # Prerequisite:
 
 ## Preferred Platform -  Linux
@@ -53,6 +60,11 @@ sudo -i
 ```
 node cli.js
 ```
+# Tests
+```
+npm run test
+```
+![Ubuntu 64-bit - VMware Workstation 15 Player (Non-commercial use only) 24-11-2020 20_26_31 (2)](https://user-images.githubusercontent.com/43717493/100111211-deebd600-2e93-11eb-9ba9-b98a5693a78f.png)
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
