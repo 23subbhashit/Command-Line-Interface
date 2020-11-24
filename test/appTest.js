@@ -7,12 +7,10 @@ describe("Testing Command Line Interface using chai", () => {
 		  setTimeout(resolve, ms);
 		});
 	}
-	it("Testing prompt", async() => {	
+	it(" Testing prompt", async() => {	
 		
 	// await wait(5000);
 	const credentials = await inquirer.askSniffCredentials();
-	
-	console.log(credentials);
 	if(credentials['method']=='TCP'){
 		expect(credentials).to.eql({ method: 'TCP' });
 	}
@@ -27,11 +25,24 @@ describe("Testing Command Line Interface using chai", () => {
 	}
 	}); 
 
-	it("Is returning boolean value as true", async() => { 
-	expect(5 == 5).to.be.true; 
+	it(" TCP Python file  to Node", async() => { 
+		var spawn = require('child_process').spawn;
+		const py = spawn('python3', ['../Python/TCP.py']);
+		expect(py.spawnargs).to.eql([ 'python3', '../Python/TCP.py' ]);
 	}); 
-	
-	it("Are both the sentences matching", async() => { 
-	expect("This is working").to.equal('This is working'); 
+	it(" Final Python file  to Node", async() => { 
+		var spawn = require('child_process').spawn;
+		const py = spawn('python3', ['../Python/Final.py']);
+		expect(py.spawnargs).to.eql([ 'python3', '../Python/Final.py' ]);
+	}); 
+	it(" ICMP Python file  to Node", async() => { 
+		var spawn = require('child_process').spawn;
+		const py = spawn('python3', ['../Python/ICMP.py']);
+		expect(py.spawnargs).to.eql([ 'python3', '../Python/ICMP.py' ]);
+	}); 
+	it(" UCP Python file  to Node", async() => { 
+		var spawn = require('child_process').spawn;
+		const py = spawn('python3', ['../Python/UDP.py']);
+		expect(py.spawnargs).to.eql([ 'python3', '../Python/UDP.py' ]);
 	}); 
 }); 
