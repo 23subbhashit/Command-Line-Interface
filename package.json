@@ -4,7 +4,7 @@
   "description": "A command line interface  for sniffing purposes.",
   "main": "cli.js",
   "scripts": {
-    "test": "mocha --recursive --exit"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
